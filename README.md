@@ -50,7 +50,7 @@ Reviews implementation plans and provides a go/no-go decision for development. E
 ```
 /plan-review "We're planning to implement plan @task-x-new-cool-feature.md"
 
-/plan-review Here is the plan we want to implement: "..."
+/plan-review "Here is the plan we want to implement: @my-plan.md"
 ```
 
 ### 2. `code-review-low` & `code-review-high`
