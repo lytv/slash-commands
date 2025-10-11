@@ -6,6 +6,14 @@
 
 A curated collection of AI-powered slash commands for code review, problem analysis, and refactoring workflows.
 
+## Quick Reference
+
+📋 `/plan-review` - Review implementation plans  
+🔍 `/code-review-low` - Fast code review  
+🔬 `/code-review-high` - Thorough code review  
+🐛 `/problem-analyzer` - Identify bugs and affected files  
+♻️ `/refactor-code` - Start refactoring workflows  
+
 ## Installation
 
 ### Cursor
