@@ -44,7 +44,14 @@ Reviews implementation plans and provides a go/no-go decision for development. E
 - Performance, security, and privacy impact
 - Code smells and potential caveats
 
-**Usage**: `/plan-review <your-plan>`
+**Usage**: `/plan-review "<your-plan>"`
+
+**Examples**:
+```
+/plan-review "We're planning to implement plan @task-x-new-cool-feature.md"
+
+/plan-review Here is the plan we want to implement: "..."
+```
 
 ### 2. `code-review-low` & `code-review-high`
 Comprehensive code review commands for post-implementation analysis.
@@ -59,7 +66,15 @@ Comprehensive code review commands for post-implementation analysis.
 - Deeper security and performance analysis
 - Comprehensive test recommendations
 
-**Usage**: `/code-review-low "review unstaged files"` or `/code-review-high <task-description>`
+**Usage**: `/code-review-low "<files/code/description to review>"`
+
+**Examples**:
+
+```
+/code-review-low "my plan @task-x-cool-feature has been implemented check unstaged files for review"
+
+/code-review-low "@auth.server.ts @auth.rs @auth.connector.ts"
+```
 
 ### 3. `problem-analyzer`
 Identifies bugs and maps affected files across the codebase. Provides:
@@ -68,7 +83,18 @@ Identifies bugs and maps affected files across the codebase. Provides:
 - Minimal safe fix proposals
 - Documentation gap identification
 
-**Usage**: `/problem-analyzer <problem-description>`
+**Usage**: `/problem-analyzer "<problem-description>"`
+
+**Examples:**
+The Problem analyzer prompt works best when you add logs and a short problem description.
+
+I ran this often with cheeta model to get a quick analysis and move over to gpt codex.
+
+```
+/problem-analyzer "the app won't compile. here are the logs <paste-logs>"
+
+/problem-analyzer "we have a serious blocking bug in @user-form.ts and @user.service.ts"
+```
 
 ### 4. `refactor-code`
 Initiates refactoring workflows with clear scope and isolation:
@@ -77,7 +103,11 @@ Initiates refactoring workflows with clear scope and isolation:
 - Documentation of unrelated issues (without fixing)
 - No backward compatibility or feature flags
 
-**Usage**: `/refactor-code <refactoring-goal>`
+**Usage**: `/refactor-code "<refactoring-goal>"`
+
+```
+/refactor-code "here is our implementation plan @impl-plan lets start"
+```
 
 ## Workflow Tips
 
