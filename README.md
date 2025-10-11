@@ -17,12 +17,12 @@ A curated collection of AI-powered slash commands for code review, problem analy
 ## Installation
 
 ### Cursor
-Place these files in `.cursor/commands/` directory. Remove the `$1` parameters and XML wrapping tags when using in Cursor.
+Copy the `.md` files from the `slash-commands/` directory into `.cursor/commands/` directory. Remove the `$1` parameters and XML wrapping tags when using in Cursor.
 
 **Official docs**: [Cursor Slash Commands](https://cursor.com/docs/cli/reference/slash-commands)
 
 ### Codex
-Place these files in `~/.codex/prompts/` directory. Restart Codex after installation for changes to take effect.
+Copy the `.md` files from the `slash-commands/` directory into `~/.codex/prompts/` directory. Restart Codex after installation for changes to take effect.
 
 **Official docs**: [Codex Prompts](https://github.com/openai/codex/blob/main/docs/prompts.md)
 
@@ -32,13 +32,13 @@ Claude Code supports both project-specific and personal commands:
 **Project commands** (shared with team):
 ```bash
 mkdir -p .claude/commands
-# Copy command files to .claude/commands/
+# Copy the .md files to .claude/commands/
 ```
 
 **Personal commands** (available across all projects):
 ```bash
 mkdir -p ~/.claude/commands
-# Copy command files to ~/.claude/commands/
+# Copy the .md files to ~/.claude/commands/
 ```
 
 **Official docs**: [Claude Code Slash Commands](https://docs.claude.com/en/docs/claude-code/slash-commands)
