@@ -1,5 +1,9 @@
 # Slash Commands Collection
 
+<div align="center">
+  <img src="public/banner.png" alt="Slash Commands" width="100%" />
+</div>
+
 A curated collection of AI-powered slash commands for code review, problem analysis, and refactoring workflows.
 
 ## Installation
@@ -7,8 +11,29 @@ A curated collection of AI-powered slash commands for code review, problem analy
 ### Cursor
 Place these files in `.cursor/commands/` directory. Remove the `$1` parameters and XML wrapping tags when using in Cursor.
 
+**Official docs**: [Cursor Slash Commands](https://cursor.com/docs/cli/reference/slash-commands)
+
 ### Codex
 Place these files in `~/.codex/prompts/` directory. Restart Codex after installation for changes to take effect.
+
+**Official docs**: [Codex Prompts](https://github.com/openai/codex/blob/main/docs/prompts.md)
+
+### Claude Code
+Claude Code supports both project-specific and personal commands:
+
+**Project commands** (shared with team):
+```bash
+mkdir -p .claude/commands
+# Copy command files to .claude/commands/
+```
+
+**Personal commands** (available across all projects):
+```bash
+mkdir -p ~/.claude/commands
+# Copy command files to ~/.claude/commands/
+```
+
+**Official docs**: [Claude Code Slash Commands](https://docs.claude.com/en/docs/claude-code/slash-commands)
 
 ## Commands
 
@@ -66,3 +91,9 @@ Initiates refactoring workflows with clear scope and isolation:
 - **X/Twitter**: [@kregenrek](https://x.com/kregenrek)
 - **Bluesky**: [@kevinkern.dev](https://bsky.app/profile/kevinkern.dev)
 - **Website**: Learn to build software with AI: [instructa.ai](https://www.instructa.ai)
+
+## My other projects
+* OpenAI Codex Tools [codex-1up](https://github.com/regenrek/codex-1up)
+* [AI Prompts](https://github.com/instructa/ai-prompts/blob/main/README.md) - Curated AI Prompts for Cursor AI, Cline, Windsurf and Github Copilot
+* [codefetch](https://github.com/regenrek/codefetch) - Turn code into Markdown for LLMs with one simple terminal command
+* [aidex](https://github.com/regenrek/aidex) A CLI tool that provides detailed information about AI language models, helping developers choose the right model for their needs.# tool-starter
