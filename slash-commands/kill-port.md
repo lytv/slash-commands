@@ -10,5 +10,3 @@ Steps:
 macOS/Linux: lsof -ti:$PORT | xargs kill -9
 Windows: netstat -ano | findstr :$PORT then taskkill /PID $PID /F
 Alternative: sudo fuser -k $PORT/tcp (Linux)
-
-Handle multiple ports by repeating for each. Check if dev server can restart instead of killing.
