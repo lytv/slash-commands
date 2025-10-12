@@ -13,6 +13,7 @@ A curated collection of AI-powered slash commands for code review, problem analy
 🔬 `/code-review-high` - Thorough code review  
 🐛 `/problem-analyzer` - Identify bugs and affected files  
 ♻️ `/refactor-code` - Start refactoring workflows  
+🔌 `/kill-port` - Kill processes running on specific ports  
 
 ## Installation
 
@@ -115,6 +116,22 @@ Initiates refactoring workflows with clear scope and isolation:
 
 ```
 /refactor-code "here is our implementation plan @impl-plan lets start"
+```
+
+### 5. `kill-port`
+Kills processes running on specified ports with OS-specific commands and safety checks:
+- Cross-platform support (macOS, Linux, Windows)
+- Process identification and verification
+- Safety warnings for system processes
+- Graceful shutdown recommendations
+
+**Usage**: `/kill-port "<port-number(s)>"`
+
+**Examples**:
+```
+/kill-port "3000"
+
+/kill-port "3000 8080 9000"
 ```
 
 ## Workflow Tips
